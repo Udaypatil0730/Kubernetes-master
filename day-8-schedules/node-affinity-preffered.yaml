@@ -6,7 +6,7 @@ metadata:
     key: app
     value: blue
 spec:
-  replicas: 3
+  replicas: 2
   selector:
     matchLabels:
       key: app
@@ -30,7 +30,7 @@ spec:
                 operator: In
                 values:
                 - medium
-          - weight: 50
+          - weight: 60
             preference:
               matchExpressions:
               - key: size
